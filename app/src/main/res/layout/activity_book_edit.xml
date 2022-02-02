@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.BookEdit">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_Editimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:backgroundTint="@color/color_bg_favorites"
+            android:src="@drawable/ic_baseline_image_24"
+            >
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/im_Editimgbook"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/open_book"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/color_bg_favorites"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/color_bg_favorites"
+            app:startIconDrawable="@drawable/book_name"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/color_bg_favorites"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_bookNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/book_name"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/color_bg_favorites"
+            app:startIconDrawable="@drawable/author_name"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/color_bg_favorites"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_authorNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/author_name"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/color_bg_favorites"
+            app:startIconDrawable="@drawable/release_year"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/color_bg_favorites"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_releaseYearEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/release_year"
+                android:inputType="numberDecimal"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/color_bg_favorites"
+            app:startIconDrawable="@drawable/pages_number"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/color_bg_favorites"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_pagesNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pages_number"
+                android:inputType="numberDecimal"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/color_bg_favorites"
+            app:startIconDrawable="@drawable/create_category"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/color_bg_favorites"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_CategoryIdEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/category_Id"
+                android:inputType="numberDecimal"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Edit"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:backgroundTint="@color/color_bg_favorites"
+            android:text="@string/btn_Edit"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+</LinearLayout>

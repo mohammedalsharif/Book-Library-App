@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Book Library</string>
+    <string name="tv_createB">Create Book</string>
+    <string name="tv_library">Library</string>
+    <string name="tv_create_Cat">Create Category</string>
+    <string name="tv_favorites">Favorites</string>
+    <string name="author_name">Author Name</string>
+    <string name="book_name">Book Name</string>
+    <string name="release_year">Release Year</string>
+    <string name="pages_number">Pages Number</string>
+    <string name="btn_create">create</string>
+    <string name="tv_category">Category</string>
+    <string name="dontper">هذا التطبيق يتطلب الحصول على الصلاحية</string>
+    <string name="havePer">تم الحصول على الصلاحية</string>
+    <string name="category_name">Category Name</string>
+    <string name="imgFalse">The image has not been selected</string>
+    <string name="imgTrue">The image was selected successfully</string>
+    <string name="inalidImg">Invalid image, Please select image</string>
+    <string name="invalidSp">Category id can\'t be 0 or less</string>
+    <string name="invalidBookName">Invalid Book Name</string>
+    <string name="invalidAuthorName">Invalid Author Name</string>
+    <string name="invalidReleaseYear">Invalid Release Year</string>
+    <string name="invalidPagesNumber">Number of pages can\'t be 0 or less</string>
+    <string name="btn_Edit">Update</string>
+    <string name="category_Id">Category Id</string>
+    <string name="alertwelcome">Hello In My Library</string>
+    <string name="alerttext">This is my Library welcome  😍 .</string>
+    <string name="et_Book_title">Edit Book</string>
+    <string name="library_title">Library</string>
+</resources>
